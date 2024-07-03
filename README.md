@@ -6,7 +6,7 @@ Method | Citation | Links
 ESPA | TBD. | [Paper](TBD) [Poster](TBD) [Presentation](TBD)
 # Table of content:
 [Software requirements](#Software-requirements)\
-[MISPEL harmonization](#MISPEL-Harmonization)\
-[Structure of input data for MISPEL](#Structure-of-input-data-for-MISPEL)\
+[ESPA harmonization](#MISPEL-Harmonization)\
+[Structure of input data for ESPA](#Structure-of-input-data-for-MISPEL)\
 [Image preprocessing](#Image-Preprocessing)\
 [Running](#Running)
