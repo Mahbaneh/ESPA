@@ -7,7 +7,7 @@ ESPA | TBD. | [Paper](TBD) [Poster](TBD) [Presentation](TBD)
 # Table of content:
 [Software requirements](#Software-requirements)\
 [ESPA harmonization](#ESPA-Harmonization)\
-[Structure of input data for ESPA](#Structure-of-input-data-for-MISPEL)\
+[Structure of input data for ESPA](#Structure-of-input-data-for-ESPA)\
 [Image preprocessing](#Image-Preprocessing)\
 [Running](#Running)
 
@@ -15,3 +15,13 @@ ESPA | TBD. | [Paper](TBD) [Poster](TBD) [Presentation](TBD)
 Python and Pytorch. 
 
 # ESPA harmonization: 
+TBD.
+
+# Structure of input data for ESPA:
+TBD.
+
+# Image preprocessing:
+TBD.
+
+# Running:
+TBD.
