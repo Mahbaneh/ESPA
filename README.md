@@ -1,5 +1,5 @@
 
-# Multi-scanner Image harmonization via Structure Preserving Embedding Learning (MISPEL)
+# ESPA: An Unsupervised Harmonization Framework via Enhanced Structure Preserving Augmentation
 # Reference to paper: 
 Method | Citation | Links 
 --- | --- | --- 
