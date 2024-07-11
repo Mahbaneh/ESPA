@@ -15,7 +15,8 @@ ESPA | TBD. | [Paper](TBD) [Poster](TBD) [Presentation](TBD)
 Python and Pytorch. 
 
 # ESPA harmonization: 
-TBD.
+TBD. 
+![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/SPA_Framework.png)
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
 # Structure of input data for ESPA:
