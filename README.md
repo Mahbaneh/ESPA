@@ -16,6 +16,7 @@ Python and Pytorch.
 
 # ESPA harmonization: 
 TBD.
+![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
 # Structure of input data for ESPA:
 TBD.
