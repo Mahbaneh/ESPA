@@ -16,6 +16,9 @@ Python and Pytorch.
 
 # ESPA harmonization: 
 TBD. 
+TBD. 
+TBD. 
+TBD. 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/SPA_Framework.png)
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
