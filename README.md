@@ -6,7 +6,7 @@ Method | Citation | Links
 ESPA | Eshaghzadeh Torbati M., Minhas D. S., Tafti A. P., DeCarli C. S., Tudorascu D. L., and Hwang S. J., 2024, October. ESPA: An Unsupervised Harmonization Framework via Enhanced Structure Preserving Augmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention. | [Paper](TBD) [Poster](TBD)
 # Table of content:
 [Software requirements](#Software-requirements)\
-[ESPA harmonization](#ESPA-Harmonization)\
+[ESPA framework](#ESPA-framework)\
 [Structure of input data for ESPA](#Structure-of-input-data-for-ESPA)\
 [Image preprocessing](#Image-Preprocessing)\
 [Running](#Running)
