@@ -15,7 +15,7 @@ ESPA | Eshaghzadeh Torbati M., Minhas D. S., Tafti A. P., DeCarli C. S., Tudoras
 Python and Pytorch. 
 
 # ESPA harmonization: 
-TBD. 
+  # ESPA framework: 
 TBD. 
 TBD. 
 TBD. 
