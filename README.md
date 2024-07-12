@@ -15,11 +15,12 @@ ESPA | Eshaghzadeh Torbati M., Minhas D. S., Tafti A. P., DeCarli C. S., Tudoras
 Python and Pytorch. 
 
 # ESPA harmonization: 
-  # ESPA framework: 
-TBD. 
-TBD. 
-TBD. 
+# ESPA framework: 
+
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/SPA_Framework.png)
+# ESPA augmentations: 
+# Tissue type contrast augmentations: 
+# Residual augmentations: 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
 # Structure of input data for ESPA:
