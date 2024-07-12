@@ -19,8 +19,8 @@ Python and Pytorch.
 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/SPA_Framework.png)
 # ESPA augmentations: 
-# Tissue type contrast augmentations: 
-# Residual augmentations: 
+# Tissue type contrast augmentation: 
+# GAN-based residual augmentation: 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
 # Structure of input data for ESPA:
@@ -30,7 +30,16 @@ TBD.
 TBD.
 
 # Running:
-TBD.
+# ESPA_TC: ESPA trained using tissue-type contrast augmentation
+```
+python3 main.py --data_dir "Data" --mask_adr 'Data/JHU_MNI_SS_T1_Brain_Mask.nii' \
+--output_dir 'Data/Output' --downsample False --normalizing False \
+--upsampling False  --Swap_axis True \
+--latent_dim 6 --batch_size 4 --learning_rate 0.0001 \
+--T1 100 --T2 100  --scanner_names "ge,philips,trio,prisma"\
+--lambda1 0.3 --lambda2 1.0 --lambda3 1.0 --lambda4 4.0
+```
+# ESPA_TC: ESPA trained using GAN-based residual augmentation
 ```
 python3 main.py --data_dir "Data" --mask_adr 'Data/JHU_MNI_SS_T1_Brain_Mask.nii' \
 --output_dir 'Data/Output' --downsample False --normalizing False \
