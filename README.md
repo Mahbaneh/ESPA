@@ -18,7 +18,7 @@ Python and Pytorch.
 ESPA, crafted as an unsupervised task-agnostic image-harmonization framework, adapts images to a scanner-middle-ground domain. In achieving this adaptation, we employed our harmonization technique, [MISPEL](https://github.com/Mahbaneh/MISPEL/tree/main), albeit with a significant modification. Instead of relying on matched data, we introduce a novel approach wherein we simultaneously generate and utilize simulated matched images during the training of MISPEL. This approach equips MISPEL with simulated data of substantial size, offering a solution to the model robustness challenge in harmonization, particularly concerning supervised harmonization methods. 
 The simulated matched images are generated using our novel structure-preserving augmentation methods: (1) tissue-type contrast augmentation, and (2) GAN-based residual augmentation. Initially, each augmentation method is individually configured to adapt images of a source scanner to those of the target scanners. We refer to the data targeted for harmonization
 as multi-scanner data. This data contains images of M scanners. We consider another set of data with images of one arbitrary scanner and refer to it as source
-data. We refer to scanners of the source and multiscanner data as the source scanner and target scanners, respectively.
+data. We refer to scanners of the source and multiscanner data as the _source_ scanner and _target_ scanners, respectively.
 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_Framework.png)
 # Tissue type contrast augmentation: 
