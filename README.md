@@ -20,6 +20,8 @@ Python and Pytorch.
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/SPA_Framework.png)
 # ESPA augmentations: 
 # Tissue type contrast augmentation: 
+![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC1.png)
+![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC2.png)
 # GAN-based residual augmentation: 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
