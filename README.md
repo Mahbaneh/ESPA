@@ -20,7 +20,7 @@ The simulated matched images are generated using our novel structure-preserving 
 as multi-scanner data. This data contains images of M scanners. We consider another set of data with images of one arbitrary scanner and refer to it as source
 data. We refer to scanners of the source and multiscanner data as the source scanner and target scanners, respectively.
 
-![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/SPA_Framework.png)
+![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_Framework.png)
 # Tissue type contrast augmentation: 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC1.png)
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC2.png)
