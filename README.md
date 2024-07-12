@@ -11,7 +11,7 @@ ESPA | Eshaghzadeh Torbati M., Minhas D. S., Tafti A. P., DeCarli C. S., Tudoras
 [Image preprocessing](#Image-Preprocessing)\
 [Running](#Running)
 
-- Software requirements:
+# Software requirements:
 Python and Pytorch. 
 
 # ESPA harmonization: 
