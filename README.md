@@ -26,6 +26,7 @@ Scanner effects can impact brain tissue contrast. To address this issue, we util
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC1.png)
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC2.png)
 # GAN-based residual augmentation: 
+Scanner effects can be more intricate than tissue-type modifications and can vary across brain regions. Thus, we develop a GAN-based augmentation method to generate and sample scanner effects as images (_residuals_) added to the original images. By limiting scanner effects as additive components to images, we consider brain structure during augmentation. For this purpose, we introduce Residual StarGAN, which performs image-to-image translation between all pairs of our scanner domains: source and target scanners.
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
 # Structure of input data for ESPA:
