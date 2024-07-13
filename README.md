@@ -30,7 +30,7 @@ Scanner effects can be more intricate than tissue-type modifications and can var
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
 # Structure of input data for ESPA:
-TBD.
+Matched data in unmatched format. Not necessarily should be matched. And OASIS ... 
 
 # Image preprocessing:
 For the preprocessing step please read the 'preprocessing' paragraph in section 3 of our paper. The steps are: (1) Registration to a template, (2) N4 bias correction, (3) Skull stripping, and (4) Image scaling.
