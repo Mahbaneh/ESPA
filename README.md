@@ -40,7 +40,7 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 # ESPA_TC: ESPA trained using tissue-type contrast augmentation
 Configuring tissue-type contrast augmentation:
 ```
-python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
+python aaa.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
 --lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs  "./Dataset/TargetScanners"\
 --external_scanner_image_adrs "./Dataset/ExternalScanner" --CVfolds_adrs "./Dataset/CV_Folds"\
 --b1 0.5 --b2 0.999 --checkpoint_interval 20
@@ -55,14 +55,13 @@ python3 main.py --data_dir "Data" --mask_adr 'Data/JHU_MNI_SS_T1_Brain_Mask.nii'
 --T1 100 --T2 100  --scanner_names "ge,philips,trio,prisma"\
 --lambda1 0.3 --lambda2 1.0 --lambda3 1.0 --lambda4 4.0
 ```
-# ESPA_TC: ESPA trained using GAN-based residual augmentation
+# ESPA_Res: ESPA trained using GAN-based residual augmentation
+Configuring GAN-based residual augmentation:
 ```
-python3 main.py --data_dir "Data" --mask_adr 'Data/JHU_MNI_SS_T1_Brain_Mask.nii' \
---output_dir 'Data/Output' --downsample False --normalizing False \
---upsampling False  --Swap_axis True \
---latent_dim 6 --batch_size 4 --learning_rate 0.0001 \
---T1 100 --T2 100  --scanner_names "ge,philips,trio,prisma"\
---lambda1 0.3 --lambda2 1.0 --lambda3 1.0 --lambda4 4.0
+python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
+--lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs  "./Dataset/TargetScanners"\
+--external_scanner_image_adrs "./Dataset/ExternalScanner" --CVfolds_adrs "./Dataset/CV_Folds"\
+--b1 0.5 --b2 0.999 --checkpoint_interval 20
 ```
 For training ESPA using GAN-based residual augmentation.
 ```
