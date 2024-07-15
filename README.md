@@ -38,7 +38,7 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 
 # Running:
 # ESPA_TC: ESPA trained using tissue-type contrast augmentation
-configuring tissue-type contrast augmentation:
+Configuring tissue-type contrast augmentation:
 ```
 python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
 --lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs  "./Dataset/TargetScanners"\
