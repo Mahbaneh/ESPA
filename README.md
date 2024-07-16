@@ -71,5 +71,6 @@ python Training_ESPA_Res.py --lambda1 1.0 --lambda2 200.0 --lambda3 1.0 --lambda
  --learning_rate_step2 0.00001 --num_workers 0 --data_frequency_step2 5 --data_frequency_step2 14\
  --save_freq_step1 50 --save_freq_step2 50  --c_dim 5 --res_blocks 9 --nz 192 --data_dir\
  "./Dataset/ESPA_Res_Training/ErternalScannerTrainingMISPEL" --train_excel_adr\
- "./Dataset/ESPA_Res_Training/ErternalScannerTrainingMISPEL/OASIS_train.xlsx" -- aug_data_folder "Augmented_train_data"
+ "./Dataset/ESPA_Res_Training/ErternalScannerTrainingMISPEL/OASIS_train.xlsx"\
+ -- aug_data_folder "Augmented_train_data"
 ```
