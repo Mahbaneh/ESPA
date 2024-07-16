@@ -64,14 +64,12 @@ python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0
 --b1 0.5 --b2 0.999 --checkpoint_interval 20
 ```
 For training ESPA using GAN-based residual augmentation.
+
 ```
-python ALL_StarGAN_Final_validation2.py --lambda1 1.0 --lambda2 200.0 --lambda3 1.0 --lambda4 1.0 --no_latent_embeddings 6 --epochs_step1 100 --epochs_step2 400 --learning_rate_step1 0.0001 --learning_rate_step2 0.00001 --num_workers 0 --data_frequency_step2 5 --data_frequency_step2 14 --save_freq_step1 50 --save_freq_step2 50
-```
-```
-python3 main.py --data_dir "Data" --mask_adr 'Data/JHU_MNI_SS_T1_Brain_Mask.nii' \
---output_dir 'Data/Output' --downsample False --normalizing False \
---upsampling False  --Swap_axis True \
---latent_dim 6 --batch_size 4 --learning_rate 0.0001 \
---T1 100 --T2 100  --scanner_names "ge,philips,trio,prisma"\
---lambda1 0.3 --lambda2 1.0 --lambda3 1.0 --lambda4 4.0
+python Training_ESPA_Res.py --lambda1 1.0 --lambda2 200.0 --lambda3 1.0 --lambda4 1.0\
+ --no_latent_embeddings 6 --epochs_step1 100 --epochs_step2 400 --learning_rate_step1 0.0001\
+ --learning_rate_step2 0.00001 --num_workers 0 --data_frequency_step2 5 --data_frequency_step2 14\
+ --save_freq_step1 50 --save_freq_step2 50  --c_dim 5 --res_blocks 9 --nz 192 --data_dir\
+ "./Dataset/ESPA_Res_Training/ErternalScannerTrainingMISPEL" --train_excel_adr\
+ "./Dataset/ESPA_Res_Training/ErternalScannerTrainingMISPEL/OASIS_train.xlsx" -- aug_data_folder "Augmented_train_data"
 ```
