@@ -56,7 +56,7 @@ python3 main.py --data_dir "Data" --mask_adr 'Data/JHU_MNI_SS_T1_Brain_Mask.nii'
 --lambda1 0.3 --lambda2 1.0 --lambda3 1.0 --lambda4 4.0
 ```
 # ESPA_Res: ESPA trained using GAN-based residual augmentation
-Configuring GAN-based residual augmentation: ***Explain directories
+Configuring GAN-based residual augmentation: ***Explain directories: Where are the inputs and where are the outputs. 
 ```
 python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
 --lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs  "./Dataset/TargetScanners"\
