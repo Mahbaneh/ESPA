@@ -40,7 +40,7 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 
 # Running:
 # ESPA_TC: ESPA trained using tissue-type contrast augmentation
-**Extracting GMM of images:**
+**Extracting GMM of images for calculating distributions of tissue-type parameter differences:**
 
 Input: ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images
        ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Image_List.xlsx
