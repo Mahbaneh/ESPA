@@ -55,7 +55,8 @@ python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0
  "./Dataset/ResGAN_Configuration/CV_Folds" --b1 0.5 --b2 0.999 --checkpoint_interval 20
 ```
 **Training ESPA using GAN-based residual augmentation:**
-There are three **input arguments** for input data: 1) data_dir, 2) train_excel_adr, 3) aug_data_folder. 1) _data_dir_ is the directory for the data used in this step. 2) _train_excel_adr_ is the directory to the list of augmented images (the data generated in Configuring GAN-based residual augmentation). 3) _aug_data_folder_ is the directory to the augmented images. 
+
+There are three **input arguments** for input data: 1) data_dir, 2) train_excel_adr, and 3) aug_data_folder. 1) _data_dir_ is the directory for the data used in this step. 2) _train_excel_adr_ is the directory to the list of augmented images (the data generated in Configuring GAN-based residual augmentation). 3) _aug_data_folder_ is the directory for the augmented images. Running the following command, a new **output folder** is created as "save" containing the trained ESPA_Res model. This model is then used for harmonizing unseen images of target scanners directly. 
 ```
 python Training_ESPA_Res.py --lambda1 1.0 --lambda2 200.0 --lambda3 1.0 --lambda4 1.0\
  --no_latent_embeddings 6 --epochs_step1 100 --epochs_step2 400 --learning_rate_step1 0.0001\
