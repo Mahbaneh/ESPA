@@ -48,8 +48,8 @@ Configuring GAN-based residual augmentation: ***Explain directories: Where are t
 ```
 python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
 --lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs  "./Dataset/ResGAN_Configuration/TargetScanners"\
---external_scanner_image_adrs "./Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs "./Dataset/ResGAN_Configuration/CV_Folds"\
---b1 0.5 --b2 0.999 --checkpoint_interval 20
+--external_scanner_image_adrs "./Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs\
+ "./Dataset/ResGAN_Configuration/CV_Folds" --b1 0.5 --b2 0.999 --checkpoint_interval 20
 ```
 Training ESPA using GAN-based residual augmentation.
 
