@@ -56,7 +56,7 @@ You extract the distribution of differences.
 
 There are three **input arguments** for input data: 1) external_scanner_image_adrs, 2) target_scanner_image_adrs, 2) CVfolds_adrs. 1) _external_scanner_image_adrs_ is the address for images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
 ```
-python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
+python ESPA_Res/Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
 --lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs\
 "./Dataset/ResGAN_Configuration/TargetScanners"\
 --external_scanner_image_adrs "./Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs\
@@ -66,7 +66,7 @@ python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0
 
 There are three **input arguments** for input data: 1) data_dir, 2) train_excel_adr, and 3) aug_data_folder. 1) _data_dir_ is the directory for the data used in this step. 2) _train_excel_adr_ is the directory to the list of augmented images (the data generated in Configuring GAN-based residual augmentation). 3) _aug_data_folder_ is the directory for the augmented images. Running the following command, a new **output folder** is created as "save" containing the trained ESPA_Res model. This model is then used for harmonizing unseen images of target scanners directly. 
 ```
-python Training_ESPA_Res.py --lambda1 1.0 --lambda2 200.0 --lambda3 1.0 --lambda4 1.0\
+python ESPA_Res/Training_ESPA_Res.py --lambda1 1.0 --lambda2 200.0 --lambda3 1.0 --lambda4 1.0\
  --no_latent_embeddings 6 --epochs_step1 100 --epochs_step2 400 --learning_rate_step1 0.0001\
  --learning_rate_step2 0.00001 --num_workers 0 --data_frequency_step2 5 --data_frequency_step2 14\
  --save_freq_step1 50 --save_freq_step2 50  --c_dim 5 --res_blocks 9 --nz 192 --data_dir\
