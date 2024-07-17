@@ -43,6 +43,10 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 **Extracting GMM of images:**
 /projects/Mahbaneh/SPA/5_GeneratingAugmentedImages_cleaned/src/ExtractingGMMs/
 
+```
+cd ESPA/ESPA_TC/ExtractingGMMs
+```
+
 You extract the distribution of differences.
 
 **Configuring tissue-type contrast augmentation:**
