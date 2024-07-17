@@ -43,6 +43,10 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 **Extracting GMM of images:**
 /projects/Mahbaneh/SPA/5_GeneratingAugmentedImages_cleaned/src/ExtractingGMMs/
 
+Input: ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images
+       ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Image_List.xlsx
+output: ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images
+
 ```
 cd ESPA/ESPA_TC/ExtractingGMMs
 python ExtractingGMMforImages.py
