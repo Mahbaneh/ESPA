@@ -38,10 +38,10 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 
 # Running:
 # ESPA_TC: ESPA trained using tissue-type contrast augmentation
-Configuring tissue-type contrast augmentation:
+**Configuring tissue-type contrast augmentation:**
 
 
-For training ESPA using tissue-type contrast augmentation.
+**Training ESPA using tissue-type contrast augmentation:**
 
 # ESPA_Res: ESPA trained using GAN-based residual augmentation
 **Configuring GAN-based residual augmentation:**
