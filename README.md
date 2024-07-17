@@ -41,11 +41,11 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 # Running:
 # ESPA_TC: ESPA trained using tissue-type contrast augmentation
 **Applying GMM to images:**
-In this step, we apply GMM to images to extract their distributions of tissue types. 
+In this step, we apply GMM to images to extract their distributions of tissue types. We redo this step for images of the _multi-scanner_ and _source_ data and extract the distribution of parametric differences as explained in the paper. Here is an example of extracting and saving GMM for an image. 
 
-Input: ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images
+**Input:** ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images
        ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Image_List.xlsx
-output: ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images
+**output:** ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images
 
 ```
 cd ESPA/ESPA_TC/ExtractingGMMs
