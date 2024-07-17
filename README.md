@@ -46,13 +46,13 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 In this step, we apply GMM to images to extract their distributions of tissue types. We redo this step for images of the _multi-scanner_ and _source_ data and extract the distribution of parametric differences as explained in the paper. Here is an example of extracting and saving GMM for an image. 
 
 **Input data:** 
-<ins>text</ins>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images: Address of the images.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Image_List.xlsx: List of images. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ins>ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images:</ins> Address of the images.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ins>ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Image_List.xlsx:</ins> List of images. 
        
 **Output data:** 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images_GMM: GMM objects extracted for images. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<ins>ESPA_TC/ExtractingGMMs/Datset/FinalFiles/Input_images_GMM:</ins> GMM objects extracted for images. 
 
 ```
 cd ESPA/ESPA_TC/ExtractingGMMs
