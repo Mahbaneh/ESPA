@@ -45,6 +45,7 @@ For the first three steps, we used the instruction prepared in the [RAVEL reposi
 
 ```
 cd ESPA/ESPA_TC/ExtractingGMMs
+python ExtractingGMMforImages.py
 ```
 
 You extract the distribution of differences.
