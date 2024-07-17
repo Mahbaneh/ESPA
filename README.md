@@ -54,7 +54,7 @@ python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0
 --external_scanner_image_adrs "./Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs\
  "./Dataset/ResGAN_Configuration/CV_Folds" --b1 0.5 --b2 0.999 --checkpoint_interval 20
 ```
-Training ESPA using GAN-based residual augmentation.
+**Training ESPA using GAN-based residual augmentation:**
 
 ```
 python Training_ESPA_Res.py --lambda1 1.0 --lambda2 200.0 --lambda3 1.0 --lambda4 1.0\
