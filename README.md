@@ -44,7 +44,7 @@ Configuring tissue-type contrast augmentation:
 For training ESPA using tissue-type contrast augmentation.
 
 # ESPA_Res: ESPA trained using GAN-based residual augmentation
-**Configuring GAN-based residual augmentation: **
+**Configuring GAN-based residual augmentation:**
 
 There are three input addresses for input data: 1) target_scanner_image_adrs, (2) external_scanner_image_adrs, and (3) CVfolds_adrs.
 ```
