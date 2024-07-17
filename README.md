@@ -46,12 +46,12 @@ For training ESPA using tissue-type contrast augmentation.
 # ESPA_Res: ESPA trained using GAN-based residual augmentation
 **Configuring GAN-based residual augmentation:**
 
-There are three input addresses for input data: 1) target_scanner_image_adrs, (2) external_scanner_image_adrs, and (3) CVfolds_adrs.
+There are three inputs for input data: 1) target_scanner_image_adrs, (2) source_scanner_image_adrs, and (3) CVfolds_adrs.
 ```
 python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
 --lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs\
 "./Dataset/ResGAN_Configuration/TargetScanners"\
---external_scanner_image_adrs "./Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs\
+--source_scanner_image_adrs "./Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs\
  "./Dataset/ResGAN_Configuration/CV_Folds" --b1 0.5 --b2 0.999 --checkpoint_interval 20
 ```
 Training ESPA using GAN-based residual augmentation.
