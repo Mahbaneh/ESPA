@@ -56,11 +56,11 @@ You extract the distribution of differences.
 
 There are three **input arguments** for input data: 1) external_scanner_image_adrs, 2) target_scanner_image_adrs, 2) CVfolds_adrs. 1) _external_scanner_image_adrs_ is the address for images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
 ```
-python ESPA_Res/Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
+python ./ESPA_Res/Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
 --lr_Dsc 0.0002 --nz 192 --target_scanner_image_adrs\
-"./Dataset/ResGAN_Configuration/TargetScanners"\
---external_scanner_image_adrs "./Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs\
- "./Dataset/ResGAN_Configuration/CV_Folds" --b1 0.5 --b2 0.999 --checkpoint_interval 20
+"./ESPA_Res/Dataset/ResGAN_Configuration/TargetScanners"\
+--external_scanner_image_adrs "./ESPA_Res/Dataset/ResGAN_Configuration/ExternalScanner" --CVfolds_adrs\
+ "./ESPA_Res/Dataset/ResGAN_Configuration/CV_Folds" --b1 0.5 --b2 0.999 --checkpoint_interval 20
 ```
 **Training ESPA using GAN-based residual augmentation:**
 
