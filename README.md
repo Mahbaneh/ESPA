@@ -64,7 +64,7 @@ python ExtractingGMMforImages.py
 You extract the distribution of differences.
 
 ```
-cd ESPA/ESPA_TC/ExtractingGMMs
+cd ESPA/ESPA_TC/GeneratingAugmentedImages
 python ExtractingGMMforImages.py
 ```
 
