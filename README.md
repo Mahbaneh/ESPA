@@ -23,7 +23,9 @@ data. We refer to scanners of the source and multi-scanner data as the _source_ 
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_Framework.png)
 # Tissue type contrast augmentation: 
 Scanner effects can impact brain tissue contrast. To address this issue, we utilize a three-step augmentation approach aimed at adjusting tissue contrast from a source scanner to a target scanner while maintaining brain structure. This method builds upon previous work by [paper](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.708196/full) initially developed for brain segmentation purposes. It is important to note that this augmentation technique adapts images from the source scanner to a _single_ target scanner. Therefore, for each of the _M_ target scanners, we should configure _M_ distinct tissue-type contrast augmentation methods.
+
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC1.png)
+
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ESPA_TC2.png)
 # GAN-based residual augmentation: 
 Scanner effects can be more intricate than tissue-type modifications and can vary across brain regions. Thus, we develop a GAN-based augmentation method to generate and sample scanner effects as images (_residuals_) added to the original images. By limiting scanner effects as additive components to images, we consider brain structure during augmentation. For this purpose, we introduce Residual StarGAN, which performs image-to-image translation between all pairs of our scanner domains: source and target scanners.
