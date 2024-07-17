@@ -63,9 +63,18 @@ python ExtractingGMMforImages.py
 
 You extract the distribution of differences.
 
+```
+cd ESPA/ESPA_TC/ExtractingGMMs
+python ExtractingGMMforImages.py
+```
 
 
 **Training ESPA using tissue-type contrast augmentation:**
+
+```
+cd ESPA/ESPA_TC/ExtractingGMMs
+python ExtractingGMMforImages.py
+```
 
 # ESPA_Res: ESPA trained using GAN-based residual augmentation
 **Configuring GAN-based residual augmentation:**
