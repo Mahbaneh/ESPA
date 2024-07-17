@@ -51,9 +51,9 @@ cd ESPA/ESPA_TC/ExtractingGMMs
 python ExtractingGMMforImages.py
 ```
 
-You extract the distribution of differences.
-
 **Configuring tissue-type contrast augmentation:**
+
+You extract the distribution of differences.
 
 
 
