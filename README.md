@@ -1,4 +1,3 @@
-
 # ESPA: An Unsupervised Harmonization Framework via Enhanced Structure Preserving Augmentation
 # Reference to paper: 
 Method | Citation | Links 
@@ -61,7 +60,22 @@ python ExtractingGMMforImages.py
 
 **2. Configuring tissue-type contrast augmentation:**
 
-You extract the distribution of differences.
+Inputs are ... You extract the distribution of differences and they are in ....
+The list of images 
+And the images in FinalFiles
+
+Outputs are ... 
+
+For train and validation
+
+```
+cd ESPA/ESPA_TC/GeneratingAugmentedImages
+python runner_generating_trainValidation_data.py --mask_adr  "Dataset/cropped_JHU_MNI_SS_T1_Brain_Mask.nii.gz"\
+ --dist_adr "./Dataset/Distributions/CV_0/" --train_image_input_info "./Dataset/Images_train.xlsx"\
+ --validation_image_input_info "./Dataset/Images_validation.xlsx" --folder_path  "./Dataset/Data_For_Loader_trainvalidation"
+```
+For test:
+Input
 
 ```
 cd ESPA/ESPA_TC/GeneratingAugmentedImages
