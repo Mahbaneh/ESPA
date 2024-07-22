@@ -83,8 +83,8 @@ python GenerateTestSet.py --filename  "./Dataset/Images_test.xlsx"  --dir_in\
 
 **3. Training ESPA using tissue-type contrast augmentation:**
 
-In this step, we use the generated augmented slices for training the ESPA_TC. The input train and validation images are in ESPA_TC/TrainingESPA_TC/Dataset/Data_For_Loader_trainvalidation/saved_data directory. The list of these images are listed in training_images_one_epoch_nifti_0.xlsx and validation_images_one_epoch_nifti_0.xlsx files. 
-There are three **input arguments** for input data: 1) data_dir, 2) train_excel_adr, and 3) aug_data_folder. 1) _data_dir_ is the directory for the data used in this step. 2) _train_excel_adr_ is the directory to the list of augmented images (the data generated in Configuring GAN-based residual augmentation). 3) _aug_data_folder_ is the directory for the augmented images. Running the following command, a new **output folder** is created as "save" containing the trained ESPA_Res model. This model is then used for harmonizing unseen images of target scanners directly. 
+In this step, we use the generated augmented slices for training the ESPA_TC. The input train and validation images are in ESPA_TC/TrainingESPA_TC/Dataset/Data_For_Loader_trainvalidation/saved_data directory. These train and validation images are listed in training_images_one_epoch_nifti_0.xlsx and validation_images_one_epoch_nifti_0.xlsx files, respectively. after running the following command, the trained ESPA_TC models are saved in ESPA_TC/TrainingESPA_TC/save **output folder**.
+
 
 ```
 cd ESPA/ESPA_TC/TrainingESPA_TC
