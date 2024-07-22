@@ -30,8 +30,8 @@ Scanner effects can impact brain tissue contrast. To address this issue, we util
 Scanner effects can be more intricate than tissue-type modifications and can vary across brain regions. Thus, we develop a GAN-based augmentation method to generate and sample scanner effects as images (_residuals_) added to the original images. By limiting scanner effects as additive components to images, we consider brain structure during augmentation. For this purpose, we introduce Residual StarGAN, which performs image-to-image translation between all pairs of our scanner domains: source and target scanners.
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
-# Structure of input data for ESPA:
-Matched data in unmatched format. Not necessarily should be matched. And OASIS ... 
+# Input data for ESPA:
+For the _multi-scanner_ data we used our in-house matched data and did not use its matched aspect. For the source data we used iages of one Tim-Trio Siemens scanner in OASIS-3. However, we can not release this data publically. We provided some sample data in this repository for running the released code.   
 
 # Image preprocessing:
 For the preprocessing step please read the 'preprocessing' paragraph in section 3 of our paper. The steps are: (1) Registration to a template, (2) N4 bias correction, (3) Skull stripping, and (4) Image scaling.
