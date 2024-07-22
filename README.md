@@ -71,7 +71,8 @@ python runner_generating_trainValidation_data.py --mask_adr "Dataset/cropped_JHU
 "./Dataset/Data_For_Loader_trainvalidation"
 ```
 For test:
-Input
+1) distribution_excel_adr, 1) filename, 2) dir_in, 3) mask_adr
+2) output: dir_out
 
 ```
 cd ESPA/ESPA_TC/GeneratingAugmentedImages
