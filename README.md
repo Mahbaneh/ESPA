@@ -83,6 +83,7 @@ cd ESPA/ESPA_TC/GeneratingAugmentedImages
 python GenerateTestSet.py --filename  "./Dataset/Images_test.xlsx"  --dir_in\
 "./Dataset/FinalFiles"  --dir_out "./Dataset/Data_For_Loader_test/saved_data"\
 --mask_adr "./Dataset/cropped_JHU_MNI_SS_T1_Brain_Mask.nii.gz" --distribution_excel_adr\
+"./Dataset/Distributions/CV_0"
 ```
 
 
