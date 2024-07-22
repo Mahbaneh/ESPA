@@ -60,12 +60,13 @@ python ExtractingGMMforImages.py
 
 **2. Configuring tissue-type contrast augmentation:**
 
-We geberated variations of augmented axial slices for train and validation data. We also generated augmented 3D scans for test data. 
+We generated variations of augmented axial slices for train and validation data. We also generated augmented 3D scans for test data. We first elaborate on generating augmented axial slices. For this, there are three **input arguments** for input data: 1) dist_adr, 2) train_image_input_info, 3) validation_image_input_info, and 4) mask_adr. 1) _dist_adr_ is the address for distribution of parametric differences between source and multi-scanner data. We provided these distributions for cross-validated multi--scanner data. 2) _train_image_input_info_ is the address to the list of train images, 3) 
+2)
+3)   images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
+
 Inputs are ... You extract the distribution of differences and they are in ....
 The list of images 
 And the images in FinalFiles
-
-There are three **input arguments** for input data: 1) external_scanner_image_adrs, 2) target_scanner_image_adrs, 2) CVfolds_adrs. 1) _external_scanner_image_adrs_ is the address for images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
 
 Outputs are ... 
 
@@ -100,7 +101,7 @@ python ExtractingGMMforImages.py
 # ESPA_Res: ESPA trained using GAN-based residual augmentation
 **1. Configuring GAN-based residual augmentation:**
 
-There are three **input arguments** for input data: 1) external_scanner_image_adrs, 2) target_scanner_image_adrs, 2) CVfolds_adrs. 1) _external_scanner_image_adrs_ is the address for images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
+There are three **input arguments** for input data: 1) external_scanner_image_adrs, 2) target_scanner_image_adrs, 3) CVfolds_adrs. 1) _external_scanner_image_adrs_ is the address for images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
 ```
 cd ESPA/ESPA_Res
 python Residual_StarGAN.py --n_epochs 200 --CV_no 2 --batch_size 64 --lr_Gen 0.0002\
