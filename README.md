@@ -31,7 +31,7 @@ Scanner effects can be more intricate than tissue-type modifications and can var
 ![This is an image](https://github.com/Mahbaneh/ESPA/blob/main/ResidualGAN.png)
 
 # Input data for ESPA:
-For the _multi-scanner_ data we used our in-house matched data and did not use its matched aspect. For the source data we used iages of one Tim-Trio Siemens scanner in OASIS-3. However, we can not release this data publically. We provided some sample data in this repository for running the released code.   
+For the _multi-scanner_ data, we used our in-house matched data and did not use its matched aspect. For the source data, we used iages of one Tim-Trio Siemens scanner in OASIS-3. However, we can not release this data publically. We provided some sample data in this repository for running the released code.   
 
 # Image preprocessing:
 For the preprocessing step please read the 'preprocessing' paragraph in section 3 of our paper. The steps are: (1) Registration to a template, (2) N4 bias correction, (3) Skull stripping, and (4) Image scaling.
