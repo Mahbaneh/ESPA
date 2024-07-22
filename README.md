@@ -60,17 +60,8 @@ python ExtractingGMMforImages.py
 
 **2. Configuring tissue-type contrast augmentation:**
 
-We generated variations of augmented axial slices for train and validation data. We also generated augmented 3D scans for test data. We first elaborate on generating augmented axial slices. For this, there are three **input arguments** for input data: 1) dist_adr, 2) train_image_input_info, 3) validation_image_input_info, and 4) mask_adr. 1) _dist_adr_ is the address for distribution of parametric differences between source and multi-scanner data. We provided these distributions for cross-validated multi--scanner data. 2) _train_image_input_info_ is the address to the list of train images, 3) 
-2)
-3)   images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
+We generated variations of augmented axial slices for train and validation data. We also generated augmented 3D scans for test data. We first elaborate on generating augmented axial slices. For this, there are four **input arguments** for input data: 1) dist_adr, 2) train_image_input_info, 3) validation_image_input_info, and 4) mask_adr. 1) _dist_adr_ is the address to distributions of parametric differences between source and multi-scanner data. We provided these distributions for cross-validated multi-scanner data. 2) _train_image_input_info_ is the address to the list of train images, 3) _validation_image_input_info_ is the list of validation data, and 4) _mask_adr_ is the adress to a brain mask. The input train and test images in addition to their GMM objects are in ESPA_TC/GeneratingAugmentedImages/Dataset/FinalFiles. Running the following command, the generated augmented images are saved in the **output folder**: ESPA_TC/GeneratingAugmentedImages/Dataset/Data_For_Loader_trainvalidation/saved_data/.
 
-Inputs are ... You extract the distribution of differences and they are in ....
-The list of images 
-And the images in FinalFiles
-
-Outputs are ... 
-
-For train and validation
 
 ```
 cd ESPA/ESPA_TC/GeneratingAugmentedImages
