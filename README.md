@@ -64,6 +64,8 @@ Inputs are ... You extract the distribution of differences and they are in ....
 The list of images 
 And the images in FinalFiles
 
+There are three **input arguments** for input data: 1) external_scanner_image_adrs, 2) target_scanner_image_adrs, 2) CVfolds_adrs. 1) _external_scanner_image_adrs_ is the address for images of the _source_ scanner (_source_ data). 2) _target_scanner_image_adrs_ is the address to the directory of images for the source scanners (_multi-scanner_ data). 3) _CVfolds_adrs_ is the address to the list of cross-validated images, if we used cross-validation for the multi-scanner data. Running the following command, a new **output folder** is created as "save" containing the trained residual-StarGAN models. The trained generator is then used for generating augmented images. The augmented images are then used for training ESPA_Res.
+
 Outputs are ... 
 
 For train and validation
