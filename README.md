@@ -86,7 +86,10 @@ python GenerateTestSet.py --filename  "./Dataset/Images_test.xlsx"  --dir_in\
 
 ```
 cd ESPA/ESPA_TC/ExtractingGMMs
-python ExtractingGMMforImages.py
+python runner_augmented_mispel.py --lambda1 1.0 --lambda2 120.0 --lambda3 1.0 --lambda4 1.0\
+--no_latent_embeddings 5 --epochs_step1 220 --epochs_step2 1200 --learning_rate_step1 0.0001\
+--learning_rate_step2 0.0001 --num_workers 16 --data_frequency_step2 3 --data_frequency_step2 3\
+--Max_index_of_train_datasets 30 --save_freq_step1 100 --save_freq_step2 100 
 ```
 
 # ESPA_Res: ESPA trained using GAN-based residual augmentation
