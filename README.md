@@ -60,6 +60,7 @@ python ExtractingGMMforImages.py
 
 **2. Configuring tissue-type contrast augmentation:**
 
+We geberated variations of augmented axial slices for train and validation data. We also generated augmented 3D scans for test data. 
 Inputs are ... You extract the distribution of differences and they are in ....
 The list of images 
 And the images in FinalFiles
