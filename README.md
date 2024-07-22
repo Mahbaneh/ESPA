@@ -6,7 +6,7 @@ ESPA | Eshaghzadeh Torbati M., Minhas D. S., Tafti A. P., DeCarli C. S., Tudoras
 # Table of content:
 [Software requirements](#Software-requirements)\
 [ESPA framework](#ESPA-framework)\
-[Structure of input data for ESPA](#Structure-of-input-data-for-ESPA)\
+[Input data for ESPA](#Input-data-for-ESPA)\
 [Image preprocessing](#Image-Preprocessing)\
 [Running](#Running)
 
