@@ -62,7 +62,6 @@ python ExtractingGMMforImages.py
 
 We generated variations of augmented axial slices for train and validation data. We also generated augmented 3D scans for test data. We first elaborate on generating augmented axial slices. For this, there are four **input arguments** for input data: 1) dist_adr, 2) train_image_input_info, 3) validation_image_input_info, and 4) mask_adr. 1) _dist_adr_ is the address to distributions of parametric differences between source and multi-scanner data. We provided these distributions for cross-validated multi-scanner data. 2) _train_image_input_info_ is the address to the list of train images, 3) _validation_image_input_info_ is the list of validation data, and 4) _mask_adr_ is the adress to a brain mask. The input train and test images in addition to their GMM objects are in ESPA_TC/GeneratingAugmentedImages/Dataset/FinalFiles. Running the following command, the generated augmented images are saved in the **output folder**: ESPA_TC/GeneratingAugmentedImages/Dataset/Data_For_Loader_trainvalidation/saved_data/.
 
-
 ```
 cd ESPA/ESPA_TC/GeneratingAugmentedImages
 python runner_generating_trainValidation_data.py --mask_adr "Dataset/cropped_JHU_MNI_SS_T1_Brain_Mask.nii.gz"\
@@ -70,9 +69,7 @@ python runner_generating_trainValidation_data.py --mask_adr "Dataset/cropped_JHU
 --validation_image_input_info "./Dataset/Images_validation.xlsx" --folder_path\
 "./Dataset/Data_For_Loader_trainvalidation"
 ```
-For test:
-1) distribution_excel_adr, 1) filename, 2) dir_in, 3) mask_adr
-2) output: dir_out
+for generating 3D augmented test images, we run the following code. This command has four **input arguments**: 1) distribution_excel_adr, 2) filename, 3) dir_in, and 4) mask_adr. 1) _distribution_excel_adr_ is the address to distributions of parametric differences between source and multi-scanner data. 2) _filename_ is the list of test images.  3) _dir_in_ is the directory to input images and their GMMs. 4) _mask_adr_ is the address to the brain mask. The genrated augmented scans are generated in **output folder** given as an argument in the command as dir_out. 
 
 ```
 cd ESPA/ESPA_TC/GeneratingAugmentedImages
